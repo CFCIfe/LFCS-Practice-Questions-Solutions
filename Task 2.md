@@ -17,5 +17,5 @@ Create a bash shell script named certscript.sh under /home/student/apps/.
     ```
     #!/bin/bash
     echo $USER
-    ip route | grep default
+    echo $(ip route show default| awk'{print $3; exit}')
     ```
