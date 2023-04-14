@@ -18,5 +18,5 @@ complete the following tasks:
 2.  ```
     ctrl+_ ; ctrl+k;
     ```
-3. ```sed -i 's/Earth/Globe/' /home/student/textreferences/editme.txt```
+3. ```sed -i 's/Earth/Globe/g' /home/student/textreferences/editme.txt```
 4.  ```echo Auctores Varii >> /home/student/textreferences/editme.txt```
