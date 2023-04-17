@@ -10,7 +10,8 @@ complete the following tasks:
 #### Answers
 
 1.  ```printf %s\\n 7777m0 w q | ed -s nonsense.txt```
-where
+
+Where:
 ```
 printf  # for formating and printing data
 %s\\n   # Placeholder for strings with newline
