@@ -15,8 +15,6 @@ complete the following tasks:
     ctrl+k ; ctrl+_ ; type 1
     ctrl+U
     ```
-2.  ```
-    ctrl+_ ; ctrl+k;
-    ```
-3. ```sed -i 's/Earth/Globe/' /home/student/textreferences/editme.txt```
+2. ```ctrl+_ ; ctrl+k;```
+3. ```sed -i 's/Earth/Globe/g' /home/student/textreferences/editme.txt```
 4.  ```echo Auctores Varii >> /home/student/textreferences/editme.txt```
