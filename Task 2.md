@@ -19,6 +19,7 @@ Create a bash shell script named certscript.sh under /home/student/apps/.
   echo $USER
   echo $(ip route show default| awk'{print $3; exit}')
   ```
+---
 
 ### Operation of Running System 2.
 ---
@@ -28,7 +29,14 @@ Create a bash shell script named certscript.sh under /home/student/apps/.
 ---
 ### Solution
 
-- ```sudo apt-get install -qq && sudo apt-get update -yqq
-  sudo apt-get install tmux```
-
--
+- ``` touch install.sh && chmod +x installl.sh ```
+  #add the following to the running_sys.sh file
+  ```
+  #!/bin/bash
+  sudo apt-get install -qq && sudo apt-get update -yqq
+  sudo apt-get install tmux
+  ```
+- ```
+  sudo crontab -e
+  #add the following contents
+  * * * * * * kill -9 $(ps aux | grep scan_filesystem | awk '{print $2}')" 2>/dev/null
