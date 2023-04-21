@@ -34,3 +34,14 @@ echo "candidate ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 The /etc/skel directory holds the default folders/files that are created for new users in their home directory. It is a skeleton and is defined in the /etc/default/useradd file under the skel option.
 
 ``` touch /etc/skel/NEWS ```
+
+---
+
+#### D. Create a group called students and a new user account with the following attributes:
+#### ● Username is harry.
+#### ● Password is magic.
+#### ● This user’s home directory is defined as /home/school/harry/.
+#### ● This new user is a member of the existing students group.
+#### ● The /home/school/harry
+
+#### 
