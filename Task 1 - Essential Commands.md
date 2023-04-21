@@ -1,4 +1,5 @@
 ### Essential Commands
+
 Open the file under
 /home/student/textreferences/editme.txt and
 complete the following tasks:
@@ -13,7 +14,7 @@ complete the following tasks:
 
 Where:
 ```
-printf  # for formating and printing data
+printf  # for formatting and printing data
 %s\\n   # Placeholder for strings with newline
 m       # command that moves the line
 w       #  write changes to file
