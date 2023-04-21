@@ -9,14 +9,17 @@ complete the following tasks:
 
 #### Answers
 
-1.  ```
-    nano /home/student/textreferences/editme.txt 
-    ctrl+_ ; type 7777
-    ctrl+k ; ctrl+_ ; type 1
-    ctrl+U
-    ```
-2.  ```
-    ctrl+_ ; ctrl+k;
-    ```
+1.  ```printf %s\\n 7777m0 w q | ed -s /home/student/textreferences/editme.txt```
+
+Where:
+```
+printf  # for formating and printing data
+%s\\n   # Placeholder for strings with newline
+m       # command that moves the line
+w       #  write changes to file
+q       #  quit editor
+ed -s   # 'quiet' text editor.
+```
+2. ```sed -i '/7000/d' /home/student/textreferences/editme.txt```
 3. ```sed -i 's/Earth/Globe/g' /home/student/textreferences/editme.txt```
 4.  ```echo Auctores Varii >> /home/student/textreferences/editme.txt```
