@@ -1,6 +1,6 @@
 ### Linux administrators are responsible for the creation, deletion, and the modification of groups, as well as the group membership. Complete the following tasks to demonstrate your ability to create and manage groups and group membership.
 
-#### A.i. Create the computestream group ii. Create a computestream folder in /exam/. iii. Make the computestream group the owner of the /exam/computestream folder.
+#### A. Create the computestream group. Create a computestream folder in /exam/ and make the computestream group the owner of the /exam/computestream folder.
 
 
 #### Solution
@@ -18,11 +18,11 @@ sudo chgrp --silent computestream /exam/computestream
 #### Solution
 
 ``` 
-    #!/bin/bash
-    # Create A new user 'candidate'
-    sudo useradd -p cert456 candidate
-    # Give sudo priviledge with no password prompt
-    echo "candidate ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+#!/bin/bash
+# Create A new user 'candidate'
+sudo useradd -p cert456 candidate
+# Give sudo priviledge with no password prompt
+echo "candidate ALL=(ALL:ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
 ```
 
 ---
@@ -34,4 +34,3 @@ sudo chgrp --silent computestream /exam/computestream
 The /etc/skel directory holds the default folders/files that are created for new users in their home directory. It is a skeleton and is defined in the /etc/default/useradd file under the skel option.
 
 ``` touch /etc/skel/NEWS ```
- 
