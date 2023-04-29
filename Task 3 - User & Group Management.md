@@ -36,10 +36,18 @@ The /etc/skel directory holds the default folders/files that are created for new
 ---
 
 #### D. Create a group called students and a new user account with the following attributes:
-#### ● Username is harry.
-#### ● Password is magic.
-#### ● This user’s home directory is defined as /home/school/harry/.
-#### ● This new user is a member of the existing students group.
-#### ● The /home/school/harry
+    ● Username is harry.
+    ● Password is magic.
+    ● This user’s home directory is defined as /home/school/harry/.
+    ● This new user is a member of the existing students group.
+    ● The /home/school/harry/binaries/ directory is
+part of the PATH variable
 
-#### 
+#### Solution
+
+```Shell
+#!/bin/bash
+sudo groupadd students
+sudo useradd -p magic -d /home/school/harry/ -g students harry
+export PATH=$PATH:/home/school/harry/binaries/
+```
